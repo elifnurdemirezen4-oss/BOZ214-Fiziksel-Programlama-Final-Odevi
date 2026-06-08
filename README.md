@@ -1,4 +1,5 @@
-![Robotun Genel Görünümü](docs/dort_bacak2.jpg)
+<img width="1448" height="726" alt="dort_bacak2" src="https://github.com/user-attachments/assets/fc2ed993-d633-402a-8371-d9c8284180af" />
+
 # SPİDER ASSİST (DÖRT BACAK)
 
 Bu proje, her bacağında iki eklem (Coxa ve Tibia) bulunan, toplam 8 servo motor ile hareket eden dört bacaklı (quadruped) bir robotun donanım ve yazılım altyapısını içermektedir. Sistem, ESP32 mikrodenetleyicisi üzerinden Bluetooth Low Energy (BLE) protokolü ile haberleşmekte ve Python tabanlı bir masaüstü arayüzü ile kontrol edilmektedir.
