@@ -43,3 +43,9 @@ Bu proje, her bacağında iki eklem (Coxa ve Tibia) bulunan, toplam 8 servo moto
 Python ortamınızda gerekli kütüphaneleri kurun:
 ```bash
 pip install bleak asyncio.
+```
+3. `software/python_ble_gui` dizinine gidin ve arayüzü başlatın:
+   ```bash
+   cd software/python_ble_gui
+   python controller.py
+   ```
