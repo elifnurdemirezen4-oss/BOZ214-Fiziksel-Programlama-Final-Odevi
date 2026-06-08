@@ -1,4 +1,4 @@
-# 8-DOF Quadruped Robot with BLE Control
+# SPİDER ASSİST (DÖRT BACAK)
 
 Bu proje, her bacağında iki eklem (Coxa ve Tibia) bulunan, toplam 8 servo motor ile hareket eden dört bacaklı (quadruped) bir robotun donanım ve yazılım altyapısını içermektedir. Sistem, ESP32 mikrodenetleyicisi üzerinden Bluetooth Low Energy (BLE) protokolü ile haberleşmekte ve Python tabanlı bir masaüstü arayüzü ile kontrol edilmektedir.
 
