@@ -1,1 +1,43 @@
+# 8-DOF Quadruped Robot with BLE Control
 
+Bu proje, her bacağında iki eklem (Coxa ve Tibia) bulunan, toplam 8 servo motor ile hareket eden dört bacaklı (quadruped) bir robotun donanım ve yazılım altyapısını içermektedir. Sistem, ESP32 mikrodenetleyicisi üzerinden Bluetooth Low Energy (BLE) protokolü ile haberleşmekte ve Python tabanlı bir masaüstü arayüzü ile kontrol edilmektedir.
+
+## 📌 Proje Özellikleri
+
+* **Kablosuz Kontrol:** BLE (Bluetooth Low Energy) teknolojisi kullanılarak düşük gecikmeli, asenkron motor kontrolü.
+* **Engelden Kaçma Otonomisi:** HC-SR04 ultrasonik sensörü ile 15 cm altındaki engellerin tespiti. Engel algılandığında motorlar durdurulur ve arayüze anlık uyarı gönderilir.
+* **Yumuşak Hareket Algoritması (Smooth Kinematics):** Servo motorların ani akım çekmesini ve mekanik hasar görmesini engellemek amacıyla `yumusakHareket` fonksiyonu ile kademeli açı geçişleri.
+* **Güç Tasarrufu:** Robot durur pozisyondayken PWM sinyalleri kesilerek motorlar serbest bırakılır (`motorlariSerbestBirak`), böylece aşırı ısınma ve güç tüketimi önlenir.
+* **Kullanıcı Arayüzü (GUI):** Python `Tkinter` ve `Bleak` kütüphaneleri kullanılarak geliştirilmiş, klavye kısayollarını (W, A, S, X) destekleyen asenkron masaüstü kontrol yazılımı.
+
+## 🛠️ Donanım Gereksinimleri
+
+* 1x ESP32 (Veya ESP32-S3) Mikrodenetleyici
+* 1x PCA9685 16-Kanal PWM Servo Sürücü (I2C adresi: 0x40)
+* 8x Servo Motor (SG90, MG90S vb.)
+* 1x HC-SR04 Ultrasonik Mesafe Sensörü
+* Uygun harici güç kaynağı (Servolar için)
+
+## 💻 Kullanılan Teknolojiler ve Kütüphaneler
+
+**Gömülü Yazılım (C++ / Arduino IDE):**
+* `Wire.h` - I2C iletişimi
+* `Adafruit_PWMServoDriver.h` - PCA9685 kontrolü
+* `BLEDevice.h`, `BLEServer.h`, `BLEUtils.h`, `BLE2902.h` - Bluetooth BLE protokolü
+
+**Masaüstü Yazılımı (Python):**
+* `tkinter` - Grafiksel Kullanıcı Arayüzü (GUI)
+* `asyncio` & `threading` - Asenkron BLE haberleşmesi ve arayüz tepkiselliği
+* `bleak` - Platform bağımsız BLE istemci bağlantısı
+
+## 🚀 Kurulum ve Çalıştırma
+
+### 1. Mikrodenetleyicinin Programlanması
+1. Arduino IDE üzerinde ESP32 kart paketinin yüklü olduğundan emin olun.
+2. `Adafruit PWM Servo Driver Library` kütüphanesini kütüphane yöneticisinden kurun.
+3. Repoda bulunan `.ino` uzantılı dosyayı ESP32 kartınıza yükleyin. 
+
+### 2. Python Arayüzünün Çalıştırılması
+Python ortamınızda gerekli kütüphaneleri kurun:
+```bash
+pip install bleak asyncio.
