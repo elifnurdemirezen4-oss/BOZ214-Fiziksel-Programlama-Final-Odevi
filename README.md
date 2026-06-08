@@ -49,3 +49,4 @@ pip install bleak asyncio.
    cd software/python_ble_gui
    python controller.py
    ```
+### 4.Arayüz açıldığında "Bluetooth ile Robota Bağlan" butonuna tıklayarak eşleşmeyi tamamlayın. Klavye üzerinden (W, A, S) kısayollarını kullanarak veya butonlarla robotu kontrol edebilirsiniz.
