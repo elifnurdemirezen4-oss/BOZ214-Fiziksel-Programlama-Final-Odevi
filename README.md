@@ -44,7 +44,7 @@ Python ortamınızda gerekli kütüphaneleri kurun:
 ```bash
 pip install bleak asyncio.
 ```
-3. `software/python_ble_gui` dizinine gidin ve arayüzü başlatın:
+### 3. `software/python_ble_gui` dizinine gidin ve arayüzü başlatın:
    ```bash
    cd software/python_ble_gui
    python controller.py
