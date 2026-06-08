@@ -2,6 +2,8 @@
 
 Bu proje, her bacağında iki eklem (Coxa ve Tibia) bulunan, toplam 8 servo motor ile hareket eden dört bacaklı (quadruped) bir robotun donanım ve yazılım altyapısını içermektedir. Sistem, ESP32 mikrodenetleyicisi üzerinden Bluetooth Low Energy (BLE) protokolü ile haberleşmekte ve Python tabanlı bir masaüstü arayüzü ile kontrol edilmektedir.
 
+## 📌 Proje Amacı 
+
 ## 📌 Proje Özellikleri
 
 * **Kablosuz Kontrol:** BLE (Bluetooth Low Energy) teknolojisi kullanılarak düşük gecikmeli, asenkron motor kontrolü.
