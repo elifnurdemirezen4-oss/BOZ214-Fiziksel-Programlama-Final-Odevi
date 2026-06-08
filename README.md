@@ -2,8 +2,9 @@
 
 Bu proje, her bacağında iki eklem (Coxa ve Tibia) bulunan, toplam 8 servo motor ile hareket eden dört bacaklı (quadruped) bir robotun donanım ve yazılım altyapısını içermektedir. Sistem, ESP32 mikrodenetleyicisi üzerinden Bluetooth Low Energy (BLE) protokolü ile haberleşmekte ve Python tabanlı bir masaüstü arayüzü ile kontrol edilmektedir.
 
-## 📌 Proje Amacı 
+## 🎯 Proje Amacı 
 
+Bu projenin temel amacı, hareket kısıtlılığı yaşayan bireylerin çevresel bağımsızlıklarını artırmak üzere; Bluetooth Low Energy (BLE) üzerinden uzaktan kontrol edilebilen, otonom engel algılama refleksine sahip, 8 serbestlik dereceli (8-DOF) bir masaüstü mekatronik robot asistan geliştirmektir. Geliştirilen bu sistem, kullanıcı dostu bir arayüz ile mekatronik donanımı entegre ederek, engelli bireylerin asgari fiziksel eforla bulundukları kısıtlı alanlarda güvenli bir şekilde erişim ve kontrol sağlamalarına olanak tanımayı hedeflemektedir.
 ## 📌 Proje Özellikleri
 
 * **Kablosuz Kontrol:** BLE (Bluetooth Low Energy) teknolojisi kullanılarak düşük gecikmeli, asenkron motor kontrolü.
