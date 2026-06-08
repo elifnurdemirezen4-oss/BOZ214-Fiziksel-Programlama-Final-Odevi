@@ -18,7 +18,7 @@ Bu proje, her bacağında iki eklem (Coxa ve Tibia) bulunan, toplam 8 servo moto
 * 1x HC-SR04 Ultrasonik Mesafe Sensörü
 * 1x XL4015 Voltaj Düşürücü (Buck)
 * 1x 3.3V-5V Lojik Dönüştürücü
-* 18650 Li-ion Pil (Sistem güç kaynağı)
+* 2x 18650 Li-ion Pil (Sistem güç kaynağı)
 
 ## 💻 Kullanılan Teknolojiler ve Kütüphaneler
 
