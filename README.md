@@ -23,6 +23,10 @@ Bu projenin temel amacı, hareket kısıtlılığı yaşayan bireylerin çevrese
 * 1x 3.3V-5V Lojik Dönüştürücü
 * 2x 18650 Li-ion Pil (Sistem güç kaynağı)
 
+## 🖨️ 3D Baskı ve Mekanik Tasarım
+
+Robotun fiziksel gövdesini ve eklem parçalarını oluşturmak için gerekli olan tüm `.stl` uzantılı 3D model dosyaları `3d_models/` klasöründe sunulmuştur. Parçaların üretimi için standart PLA malzeme ve optimum dayanıklılık/ağırlık dengesi için %30 doluluk (infill) oranı önerilmektedir.
+
 ## 💻 Kullanılan Teknolojiler ve Kütüphaneler
 
 **Gömülü Yazılım (C++ / Arduino IDE):**
