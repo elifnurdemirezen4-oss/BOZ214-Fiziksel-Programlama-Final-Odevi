@@ -51,3 +51,6 @@ pip install bleak asyncio.
    ```
 ### 4. 
 Arayüz açıldığında "Bluetooth ile Robota Bağlan" butonuna tıklayarak eşleşmeyi tamamlayın. Klavye üzerinden (W, A, S) kısayollarını kullanarak veya butonlarla robotu kontrol edebilirsiniz.
+👥 Proje Yürütücüleri
+*Furkan
+*Elif Nur Demirezen
