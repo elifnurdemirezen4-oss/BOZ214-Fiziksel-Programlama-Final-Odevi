@@ -12,11 +12,13 @@ Bu proje, her bacağında iki eklem (Coxa ve Tibia) bulunan, toplam 8 servo moto
 
 ## 🛠️ Donanım Gereksinimleri
 
-* 1x ESP32 (Veya ESP32-S3) Mikrodenetleyici
-* 1x PCA9685 16-Kanal PWM Servo Sürücü (I2C adresi: 0x40)
+* 1x ESP32 (veya ESP32-S3) Mikrodenetleyici
+* 1x PCA9685 16-Kanal PWM Servo Sürücü Modülü (I2C Adresi: 0x40)
 * 8x Servo Motor (SG90, MG90S vb.)
 * 1x HC-SR04 Ultrasonik Mesafe Sensörü
-* Uygun harici güç kaynağı (Servolar için)
+* 1x XL4015 Voltaj Düşürücü (Buck)
+* 1x 3.3V-5V Lojik Dönüştürücü
+* 18650 Li-ion Pil (Sistem güç kaynağı)
 
 ## 💻 Kullanılan Teknolojiler ve Kütüphaneler
 
